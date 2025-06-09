@@ -1,11 +1,18 @@
 import { ChatOpenAI, OpenAIEmbeddings } from "@langchain/openai";
 import { StructuredOutputParser } from "@langchain/core/output_parsers";
-import { MongoClient } from "mongodb";
+import { MongoClient, ServerApiVersion } from "mongodb";
 import { MongoDBAtlasVectorSearch } from "@langchain/mongodb";
 import { z } from "zod";
 import "dotenv/config";
 
-const client = new MongoClient(process.env.MONGODB_ATLAS_URI as string);
+const client = new MongoClient(process.env.MONGODB_ATLAS_URI as string, {
+ 
+  serverApi: {
+    version: ServerApiVersion.v1,
+    strict: true,
+    deprecationErrors: true,
+  }
+});
 
 const llm = new ChatOpenAI({
   modelName: "gpt-4o-mini",

@@ -1,7 +1,5 @@
 
-# LangGraph.js-MongoDB-Example
 
-This repository demonstrates how to use LangGraph with MongoDB for building and managing AI agents and conversational applications using an agentic approach. It showcases the integration of language models, graph-based conversation management, and MongoDB for data persistence, enabling the creation of intelligent, autonomous agents in TypeScript and Express.js.
 
 ## Features
 
@@ -23,8 +21,8 @@ This repository demonstrates how to use LangGraph with MongoDB for building and 
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/mongodb-developer/LangGraph-MongoDB-Example.git 
-cd LangGraph-MongoDB-Example
+git clone https://github.com/Gathu17/hr-chatbot-agent.git 
+
 ```
 
 2. Install the required dependencies:
@@ -89,6 +87,4 @@ npm run dev
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
-## License
 
-This project is licensed under the Apache License 2.0 - see the [LICENSE](LICENSE) file for details.
